@@ -44,7 +44,7 @@ const claseOptions = [
   "VOLQUETE",
   "BARANDA",
   "CAM. PANEL",
-  "FURGO",
+  "FURGON",
   "REMOLCADOR",
   "MOTOCICLETA"
 ]
