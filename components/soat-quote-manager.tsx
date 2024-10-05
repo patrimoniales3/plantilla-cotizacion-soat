@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { ScrollArea } from "@/components/ui/scroll-area"
-import { toast } from "@/components/ui/use-toast"
+import { toast } from "@/hooks/use-toast"
 import { Trash2 } from "lucide-react"
 
 type Quote = {
@@ -44,12 +44,12 @@ const claseOptions = [
   "VOLQUETE",
   "BARANDA",
   "CAM. PANEL",
-  "FURGON",
+  "FURGO",
   "REMOLCADOR",
   "MOTOCICLETA"
 ]
 
-export function SoatQuoteManager() {
+export default function Component() {
   const [quotes, setQuotes] = useState<Quote[]>([])
   const [availableCompanies, setAvailableCompanies] = useState<string[]>(initialCompanies)
   const [selectedCompany, setSelectedCompany] = useState<string>("")
